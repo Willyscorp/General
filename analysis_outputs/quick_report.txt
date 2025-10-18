@@ -1,0 +1,211 @@
+Data loaded (after optimization): 20000 rows, 54 columns
+
+
+Column types:
+column                          dtype
+------------------------------  -------
+Age                             float32
+Gender                          object
+Weight (kg)                     float32
+Height (m)                      float32
+Max_BPM                         float32
+Avg_BPM                         float32
+Resting_BPM                     float32
+Session_Duration (hours)        float32
+Calories_Burned                 float32
+Workout_Type                    object
+Fat_Percentage                  float32
+Water_Intake (liters)           float32
+Workout_Frequency (days/week)   float32
+Experience_Level                float32
+BMI                             float32
+Daily meals frequency           float32
+Physical exercise               float32
+Carbs                           float32
+Proteins                        float32
+Fats                            float32
+Calories                        float32
+meal_name                       object
+meal_type                       object
+diet_type                       object
+sugar_g                         float32
+sodium_mg                       float32
+cholesterol_mg                  float32
+serving_size_g                  float32
+cooking_method                  object
+prep_time_min                   float32
+cook_time_min                   float32
+rating                          float32
+Name of Exercise                object
+Sets                            float32
+Reps                            float32
+Benefit                         object
+Burns Calories (per 30 min)     float32
+Target Muscle Group             object
+Equipment Needed                object
+Difficulty Level                object
+Body Part                       object
+Type of Muscle                  object
+Workout                         object
+BMI_calc                        float32
+cal_from_macros                 float32
+pct_carbs                       float32
+protein_per_kg                  float32
+pct_HRR                         float32
+pct_maxHR                       float32
+cal_balance                     float32
+lean_mass_kg                    float32
+expected_burn                   float32
+Burns Calories (per 30 min)_bc  float64
+Burns_Calories_Bin              object
+
+
+Top missing columns:
+{'Age': 0, 'Gender': 0, 'Weight (kg)': 0, 'Height (m)': 0, 'Max_BPM': 0, 'Avg_BPM': 0, 'Resting_BPM': 0, 'Session_Duration (hours)': 0, 'Calories_Burned': 0, 'Workout_Type': 0}
+
+
+No missing values detected.
+
+
+Duplicate rows count: 0
+
+
+Numeric columns: Age, Weight (kg), Height (m), Max_BPM, Avg_BPM, Resting_BPM, Session_Duration (hours), Calories_Burned, Fat_Percentage, Water_Intake (liters), Workout_Frequency (days/week), Experience_Level, BMI, Daily meals frequency, Physical exercise, Carbs, Proteins, Fats, Calories, sugar_g, sodium_mg, cholesterol_mg, serving_size_g, prep_time_min, cook_time_min, rating, Sets, Reps, Burns Calories (per 30 min), BMI_calc, cal_from_macros, pct_carbs, protein_per_kg, pct_HRR, pct_maxHR, cal_balance, lean_mass_kg, expected_burn, Burns Calories (per 30 min)_bc
+
+
+Outlier summary (IQR rule):
+col                               n_outliers            lower           upper
+------------------------------  ------------  ---------------  --------------
+Age                                        0     -4.02           81.82
+Weight (kg)                              152     16.25          128.01
+Height (m)                                 0      1.35            2.07
+Max_BPM                                    0    141.006         218.476
+Avg_BPM                                    0     93.96          193.32
+Resting_BPM                                0     37.765          86.285
+Session_Duration (hours)                   0      0.435           2.075
+Calories_Burned                          507    -52.6688       2516.58
+Fat_Percentage                             1     11.4555         40.6084
+Water_Intake (liters)                      0      0.745           4.545
+Workout_Frequency (days/week)              0      1.45            5.53
+Experience_Level                           0     -0.505           3.535
+BMI                                      530      7.40375        41.2537
+Daily meals frequency                      0      0.535           4.495
+Physical exercise                       4695     -0.085           0.115
+Carbs                                    405     92.9063        398.616
+Proteins                                 403     37.14          159.54
+Fats                                     399     24.7212        106.371
+Calories                                 102    545            3449
+sugar_g                                    0    -26.26           75.74
+sodium_mg                                  0  -1163.52         3659.54
+cholesterol_mg                             0   -152.835         446.645
+serving_size_g                             0    -84.7462        693.824
+prep_time_min                              0    -25.4412         91.9687
+cook_time_min                              0    -52.8688        174.721
+rating                                     0     -1.15            7.09
+Sets                                       0      2.5             6.5
+Reps                                      42      5.98           33.02
+Burns Calories (per 30 min)              893    303.291         394.781
+BMI_calc                                 529      7.39351        41.2641
+cal_from_macros                          397    744.631        3188.34
+pct_carbs                                307      0.496269        0.503695
+protein_per_kg                           327      0.0649917       2.7618
+pct_HRR                                    0      0.261847        1.12
+pct_maxHR                                  0      0.515374        1.08151
+cal_balance                              232  -1110.85         2548.58
+lean_mass_kg                              17     18.5591         87.967
+expected_burn                             46    266.447        1460.18
+Burns Calories (per 30 min)_bc             0     -4.01689e+18     1.78481e+20
+
+
+Outlier summary (z-score>3):
+col                               n_outliers_z
+------------------------------  --------------
+Age                                          0
+Weight (kg)                                  0
+Height (m)                                   0
+Max_BPM                                      0
+Avg_BPM                                      0
+Resting_BPM                                  0
+Session_Duration (hours)                     0
+Calories_Burned                            111
+Fat_Percentage                               0
+Water_Intake (liters)                        0
+Workout_Frequency (days/week)                0
+Experience_Level                             0
+BMI                                        227
+Daily meals frequency                        0
+Physical exercise                          798
+Carbs                                      171
+Proteins                                   172
+Fats                                       167
+Calories                                     0
+sugar_g                                      0
+sodium_mg                                    0
+cholesterol_mg                               0
+serving_size_g                               0
+prep_time_min                                0
+cook_time_min                                0
+rating                                       0
+Sets                                         0
+Reps                                       119
+Burns Calories (per 30 min)                606
+BMI_calc                                   227
+cal_from_macros                            164
+pct_carbs                                  127
+protein_per_kg                             202
+pct_HRR                                      0
+pct_maxHR                                    0
+cal_balance                                  9
+lean_mass_kg                                 0
+expected_burn                                0
+Burns Calories (per 30 min)_bc               0
+
+
+Top absolute Pearson correlations:
+BMI              BMI_calc           1.000000
+BMI_calc         BMI                1.000000
+cal_from_macros  Carbs              0.999924
+Carbs            cal_from_macros    0.999924
+cal_from_macros  Fats               0.999848
+Fats             cal_from_macros    0.999848
+Proteins         cal_from_macros    0.999803
+cal_from_macros  Proteins           0.999803
+Proteins         Fats               0.999608
+Fats             Proteins           0.999608
+                 Carbs              0.999605
+Carbs            Fats               0.999605
+                 Proteins           0.999595
+Proteins         Carbs              0.999595
+pct_HRR          pct_maxHR          0.988485
+
+Pearson heatmap saved to: analysis_outputs\pearson_heatmap.png
+
+
+Top absolute Spearman correlations:
+Burns Calories (per 30 min)_bc  Burns Calories (per 30 min)       1.000000
+Burns Calories (per 30 min)     Burns Calories (per 30 min)_bc    1.000000
+BMI_calc                        BMI                               1.000000
+BMI                             BMI_calc                          1.000000
+Carbs                           cal_from_macros                   0.999886
+cal_from_macros                 Carbs                             0.999886
+Fats                            cal_from_macros                   0.999768
+cal_from_macros                 Fats                              0.999768
+                                Proteins                          0.999700
+Proteins                        cal_from_macros                   0.999700
+Fats                            Carbs                             0.999416
+Carbs                           Fats                              0.999416
+Fats                            Proteins                          0.999415
+Proteins                        Fats                              0.999415
+                                Carbs                             0.999401
+
+
+Automatically running example tests with target='Age' and group='Gender'
+
+T-test between 'Male' and 'Female' on 'Age': t=0.7168, p=0.4735, n=9972,10028
+
+Mann-Whitney U: u=50279512.5000, p=0.4930
+
+
+Chi-square test between 'Gender' and 'Workout_Type': chi2=4.9721, p=0.1738, dof=3
+
+Top correlated scatter saved to: analysis_outputs\scatter_BMI_vs_BMI_calc.png
