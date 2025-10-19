@@ -4,3 +4,4 @@ __pycache__/
 .env
 .ipynb_checkpoints/
 .DS_Store
+"analysis_outputs/*.html" 
