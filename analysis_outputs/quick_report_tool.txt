@@ -1,0 +1,3 @@
+Rows: 20000, Columns: 54
+Numeric cols: Age, Weight (kg), Height (m), Max_BPM, Avg_BPM, Resting_BPM, Session_Duration (hours), Calories_Burned, Fat_Percentage, Water_Intake (liters)
+Top correlations: BMI-BMI_calc:1.00; BMI_calc-BMI:1.00; cal_from_macros-Carbs:1.00; Carbs-cal_from_macros:1.00; cal_from_macros-Fats:1.00

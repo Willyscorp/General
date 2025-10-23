@@ -27,14 +27,28 @@ python scripts/split_pdf_by_chapters.py --input "data/raw/Ayn Rand_ Atlas Shrugg
 
 # Feature 2:
 Customized data analysis
-Environment: general-env 
+Environment: conda activate prof-py311-conda-env
 File name: data_analysis_report.py
 Output file: Saved in analysis_outputs
+run: scripts\data_analysis_report.py data\raw\life_style_data.csv
 
 # Feature 3:
 Data analysis report created by ydata_profiling and sweetviz
-Environment: general-env 
+Environment: conda activate prof-py311-conda-env
 File name: data_profilling_nb
 Output file: HTML file saved in analysis_outputs
 
+# Feature 4:
+Data analysis report created using langchain framework
+ollama pull llama3
+python scripts\langchain_pandas_agent.py data\raw\life_style_data.csv
 
+# Feature 5
+Streamlit audio-driven LangChain data analysis app
+Environment: general-env 
+File Name: streamlit_app_langchain.py
+python -m streamlit run streamlit_app_langchain.py
+Data: Can be selected as needed
+Output: Will be shown on the screen
+It uses Ollama llama3 which is installed locally. This need to be installed first in your environment. Run ollama pull llama3 first which takes some time
+Example Audio: Describe Age or Correlation

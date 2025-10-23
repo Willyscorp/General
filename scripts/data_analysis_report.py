@@ -1,22 +1,5 @@
 # data_analysis_report.py
-"""
-Usage:
-  python data_analysis_report.py path/to/data.csv
 
-What it does:
-  - Loads CSV
-  - Produces descriptive summaries
-  - Finds missing values and suggests imputation
-  - Detects duplicates
-  - Detects outliers (IQR and z-score)
-  - Computes correlations (Pearson & Spearman) and shows top pairs
-  - Performs hypothesis tests:
-      * numeric vs numeric correlations (Pearson)
-      * two-sample t-test / Mann-Whitney for two groups
-      * ANOVA for >2 groups
-      * chi-square for categorical association
-  - Saves a short text report and some plots to ./analysis_outputs/
-"""
 
 import sys, os, math
 from pathlib import Path
@@ -36,11 +19,7 @@ def load_data(path):
     return df
 
 def optimize_memory(df, verbose=True):
-    """
-    Downcast numerical columns to reduce memory usage.
-    Converts float64 -> float32, int64 -> smallest possible int.
-    Returns optimized DataFrame and prints memory reduction stats.
-    """
+    
     start_mem = df.memory_usage(deep=True).sum() / 1024**2  # MB
     if verbose:
         print(f"Initial memory usage: {start_mem:.2f} MB")
